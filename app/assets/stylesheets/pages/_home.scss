@@ -4,7 +4,7 @@
 #moodwork {
   max-width: 1024px;
   padding: 20px;
-  margin: auto;
+  margin: 10px auto;
   background-color: #fff;
   border-radius: 5px;
 }
@@ -25,8 +25,11 @@
     color: white;
     padding: 8px 24px;
     border-radius: 4px;
-    background: #1EDD88;
+    background: $blue;
     transition: background 0.3s ease;
+  }
+  input[type="submit"]:hover{
+  background: $orange;
   }
 }
 

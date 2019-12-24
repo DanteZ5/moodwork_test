@@ -1,0 +1,39 @@
+.login-container {
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-window {
+  width: 450px;
+  background-color: $light-gray;
+  padding: 15px;
+  border-radius: 8px;
+  label {
+    font-size: 14px;
+    color: $blue;
+  }
+}
+
+.login-logo {
+  width: 70px;
+  margin: 40px 0;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.btn-connect {
+  background-color: $blue;
+  color: #fff;
+}
+
+.btn-connect:hover {
+  background-color: $orange;
+  color: #fff;
+}
+
