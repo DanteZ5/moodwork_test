@@ -1,1 +1,72 @@
 // Specific CSS for your home-page
+
+
+#moodwork {
+  max-width: 1024px;
+  padding: 20px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.head-zone {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.search-bar {
+  input[type="text"]{
+    padding: 0 12px;
+    height: 40px;
+  }
+  input[type="submit"]{
+    color: white;
+    padding: 8px 24px;
+    border-radius: 4px;
+    background: #1EDD88;
+    transition: background 0.3s ease;
+  }
+}
+
+.repos-container {
+  margin: 20px 0;
+  padding: 5px;
+  li {
+    list-style-type: none;
+  }
+}
+
+.repos-entitled {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  li {
+    font-weight: 500;
+  }
+}
+
+
+
+.repo-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.repo-name {
+  flex: 0 0 25%;
+  font-weight: 500;
+  padding: 0 10px;
+}
+
+.repo-description {
+  flex: 0 1 50%;
+}
+
+.repo-watchers {
+  flex: 0 0 25%;
+  text-align: center;
+}

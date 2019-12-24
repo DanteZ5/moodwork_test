@@ -1,13 +1,22 @@
 import React, { Component } from 'react';
+
 import SearchBar from './search_bar.jsx';
+import Avatar from './avatar.jsx';
+import ReposList from './repos_list.jsx';
+
 
 class App extends Component {
 
   render() {
     return(
       <div className="app">
-        <SearchBar search={this.search} />
-      </div>)
+        <div className="head-zone">
+          <SearchBar />
+          <Avatar />
+        </div>
+        <ReposList />
+      </div>
+    )
   }
 }
 

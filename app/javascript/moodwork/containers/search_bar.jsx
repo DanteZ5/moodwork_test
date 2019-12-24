@@ -18,16 +18,14 @@ class SearchBar extends Component {
   }
 
   handleSubmit(event) {
-    const githubuser = this.state.value;
-    this.props.fetchKids(githubuser);
-    event.preventDefault();
+    event.preventDefault()
+    const githubUser = this.state.value;
+    this.props.fetchRepos(githubUser);
   }
-
-
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} className="search-bar">
         <input type="text" value={this.state.value} onChange={this.handleChange}/>
         <input type="submit" value="Envoyer"/>
       </form>
@@ -35,14 +33,8 @@ class SearchBar extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    repos: state.repos
-  };
-}
-
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({ fetchRepos }, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);
+export default connect(null, mapDispatchToProps)(SearchBar);
